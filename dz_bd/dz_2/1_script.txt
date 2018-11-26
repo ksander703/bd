@@ -1,0 +1,6 @@
+show index from catalogs;
+alter table catalogs
+drop index name_unique;
+update `catalogs` 
+set `name`='empty'
+where `name` is null;

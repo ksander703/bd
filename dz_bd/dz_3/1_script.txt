@@ -1,0 +1,2 @@
+update users
+set created_at=default, updated_at=default;
