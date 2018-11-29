@@ -1,0 +1,4 @@
+select avg(
+YEAR(CURRENT_DATE) - YEAR(birsthday_at)) -
+(DATE_FORMAT(CURRENT_DATE, '%m%d') < DATE_FORMAT(birsthday_at, '%m%d'))
+as 'sredniy vozrast' from users;
