@@ -1,0 +1,4 @@
+select catalogs.`name` as 'razdel', products.`name`, `description`
+from catalogs
+left join products
+on products.catalog_id=catalogs.id

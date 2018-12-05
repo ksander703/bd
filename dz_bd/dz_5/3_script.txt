@@ -1,0 +1,4 @@
+select id,
+(select name_ru from city where name_en=fly.`from`) as 'откуда',
+(select name_ru from city where name_en=fly.`to`) as 'куда'
+from fly;

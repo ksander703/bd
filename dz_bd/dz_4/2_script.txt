@@ -1,0 +1,3 @@
+select count(*) as 'kol-vo',dayname(concat_ws('-', YEAR(NOW()), month(birsthday_at), day(birsthday_at))) as day_name
+from `users`
+group by day_name;

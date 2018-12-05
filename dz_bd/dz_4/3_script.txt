@@ -1,0 +1,2 @@
+SELECT round(exp(SUM(log(chislo)))) as otvet 
+FROM pr;
